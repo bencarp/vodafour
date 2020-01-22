@@ -25,8 +25,16 @@
   border: 0;
 }
 .board button.red {
-  background-image: url(../images/coinred.svg);
+  background-color: red;
 }
 .board button.yellow {
-  background-image: url(../images/coinyellow.svg);
+  background-color: yellow;
+}
+
+.play-again {
+  height: 0px;
+  overflow: hidden;
+}
+.play-again.show {
+  height: 40px;
 }

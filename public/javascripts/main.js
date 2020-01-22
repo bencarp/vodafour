@@ -5,7 +5,10 @@
     var currentPlayerNameEl = document.querySelector('#current-player');
     var otherPlayerNameEl = document.querySelector('#other-player');
     var gameBoardEl = document.querySelector('#board');
+    var playAgainEl = document.querySelector('#play-again');
+    var playAgainBtnEl = document.querySelector('#play-again-btn');
 
+    playAgainBtnEl.addEventListener('click', () => location.reload());
     gameBoardEl.addEventListener('click', placeGamePiece);
     currentPlayerNameEl.addEventListener("keydown", Game.do.handleNameChange);
     otherPlayerNameEl.addEventListener("keydown", Game.do.handleNameChange);

@@ -65,7 +65,7 @@ Game.do = (function() {
         var otherPlayer = Game.currentPlayer
         var otherPlayerName = currentPlayerNameEl.textContent;
         var currentPlayerName = otherPlayerNameEl.textContent;
-        Game.currentPlayer = (Game.currentPlayer === 'black') ? 'red' : 'black';
+        Game.currentPlayer = (Game.currentPlayer === 'yellow') ? 'red' : 'yellow';
 
 
         // Update the players in the UI.
@@ -79,7 +79,7 @@ Game.do = (function() {
 
     }
 
-    /**
+    /**2
      * If there are empty positions below the one chosen, return the new y-position
      * we should drop the piece to.
      *

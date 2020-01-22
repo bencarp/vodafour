@@ -25,10 +25,12 @@
   border: 0;
 }
 .board button.red {
-  background-color: red;
+  background-image: url("../images/coinred.svg");
+  background-size: cover;
 }
 .board button.yellow {
-  background-color: yellow;
+  background-image: url("../images/coinyellow.svg");
+  background-size: cover;
 }
 
 .play-again {

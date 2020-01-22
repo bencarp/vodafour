@@ -1,3 +1,5 @@
+// Main gameplay routine. Makes use of the functions defined in game.js
+
 (function () {
     var prefixEl = document.querySelector('#prefix');
     var primaryTextEl = document.querySelector('.primary');
@@ -53,7 +55,7 @@
             return;
         }
 
-        // Change player.
+        // Change player after the turn.
         Game.do.changePlayer();
     };
 })();

@@ -79,7 +79,7 @@ Game.do = (function() {
 
     }
 
-    /**2
+    /**
      * If there are empty positions below the one chosen, return the new y-position
      * we should drop the piece to.
      *

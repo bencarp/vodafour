@@ -1,3 +1,10 @@
+.board {
+  border-color: #000000;
+  border-style: solid;
+  border-width: thick;
+  border-radius: 2%;
+}
+
 .board button {
   display: block;
   width: 60px;
@@ -10,7 +17,7 @@
 .board button:hover {
   filter: brightness(50%);
 }
-/* no focus rings by default... focus borders get added via js */
+/* no focus rings by default... focus borders get added with javascript */
 .board button:focus {
   outline: 0;
 }

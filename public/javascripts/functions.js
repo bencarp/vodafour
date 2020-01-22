@@ -16,7 +16,6 @@ function timer() {
 		} else {
 			$('#seconds').text(seconds);
 		}
-		timer();
 	}, 1000);
 }
 
@@ -58,6 +57,10 @@ function to_home() {
 		alert("The game is not over yet, please finish the game or forfeit before going back to the homescreen.");
 };
 
+function forfeit() {
+
+}
+
 function setName(message) {
 	console.log(document.cookie.length)
 	if (document.cookie.length == 0) {
@@ -84,7 +87,7 @@ function setName(message) {
 }
 
 // If we want the "How to play"section on the splashscreen to pop out - a function to expand the element as a block with text. At first it will never show the instructions.
-$("#how-to")[0].style.display = "none"
+//$("#how-to")[0].style.display = "none" // Uncaught TypeError for now
 $("#how-but").on("click", function () {
     var x = $("#how-to")[0]
     if (x.style.display == "none") {

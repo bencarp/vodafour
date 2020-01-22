@@ -1,8 +1,25 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.board button {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+  margin: 1px;
+  background: #bbb;
 }
-
-a {
-  color: #00B7FF;
+.board button:hover {
+  filter: brightness(50%);
+}
+/* no focus rings by default... focus borders get added via js */
+.board button:focus {
+  outline: 0;
+}
+.board button::-moz-focus-inner {
+  border: 0;
+}
+.board button.red {
+  background-image: url(../images/coinred.svg);
+}
+.board button.yellow {
+  background-image: url(../images/coinyellow.svg);
 }

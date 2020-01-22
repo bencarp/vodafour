@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Connect 4</title>
+		<link rel="icon" type="image/svg+xml" href="images/vodafour.svg">
+		<link rel="stylesheet" href="stylesheets/style.css" />
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="javascripts/game.js"></script>
+		<script src="javascripts/functions.js"></script>
+	</head>
+	<body>
+		<section id="board-section">
+			<table id="board" class="board">
+				<tbody>
+				<tr>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+				</tr>
+				<tr>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+				</tr>
+				<tr>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+				</tr>
+				<tr>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+				</tr>
+				<tr>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+				</tr>
+				<tr>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+					<td><button type="button"></button></td>
+				</tr>
+				</tbody>
+			</table>
+		</section>
+		<div class="stats">
+			<p id="players"></p>
+			<div id="elapsedtime">
+				<span>Elapsed time (m:s)</span>
+				<span id="minutes">00:</span>
+				<span id="seconds">00</span>
+			</div>
+			<p id="playercolor"></p>
+			<p id="turncount"></p>
+			<p id="turn"></p>
+        	<script>Timer()</script>
+		<div class="buttons">
+ 			<button id="fullscreen" onclick="openfullscreen()" class="buttons">Fullscreen</button>
+ 			<button id="forfeit" onclick="forfeit_button()" class="buttons">Forfeit</button>
+ 			<button id="home" onclick="home_button()" class="buttons">Home</button>
+		</div>
+	</body>
+</html>

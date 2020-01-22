@@ -8,6 +8,16 @@
 		<script src="javascripts/functions.js"></script>
 	</head>
 	<body>
+		<div id="top-text" class="top-text">
+			<h2 class="primary">
+				<span id="prefix">Current Player: </span>
+				<span id="current-player" contenteditable="true">Player 1</span>
+			</h2>
+			<h3 class="secondary">
+				<span>Next player: </span>
+				<span id="other-player" contenteditable="true">Player 2</span>
+			</h3>
+		</div>
 		<section id="board-section">
 			<table id="board" class="board">
 				<tbody>
@@ -85,6 +95,6 @@
  			<button id="home" onclick="to_home()" class="buttons">Home</button>
 		</div>
 	</body>
-	<script src="javascripts/main.js"></script>
 	<script src="javascripts/game.js"></script>
+	<script src="javascripts/main.js"></script>
 </html>

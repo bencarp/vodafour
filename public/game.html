@@ -8,19 +8,6 @@
 		<script src="javascripts/functions.js"></script>
 	</head>
 	<body>
-		<div id="top-text" class="top-text">
-			<h2 class="primary">
-				<span id="prefix">Current Player: </span>
-				<span id="current-player" contenteditable="true">Player 1</span>
-			</h2>
-			<h3 class="secondary">
-				<span>Next player: </span>
-				<span id="other-player" contenteditable="true">Player 2</span>
-			</h3>
-		</div>
-		<div id="play-again" class="play-again">
-			<a href="#" class="play-again-btn" id="play-again-btn">Play Again</a>
-		</div>
 		<section id="board-section">
 			<table id="board" class="board">
 				<tbody>
@@ -81,8 +68,22 @@
 				</tbody>
 			</table>
 		</section>
-		<div class="stats">
-			<p id="players"></p>
+		<div id="rightside" class="rightside">
+			<div id="top-text" class="top-text">
+				<h2 class="primary">
+					<span id="prefix">Current Player: </span>
+					<span id="current-player" contenteditable="true">Player 1</span>
+				</h2>
+				<h3 class="secondary">
+					<span>Next player: </span>
+					<span id="other-player" contenteditable="true">Player 2</span>
+				</h3>
+			</div>
+			<div id="play-again" class="play-again">
+				<a href="#" class="play-again-btn" id="play-again-btn">Play Again</a>
+			</div>
+			<div class="stats">
+				<p id="players"></p>
 			<div id="elapsedtime">
 				<span>Elapsed time (m:s)</span>
 				<span id="minutes">00:</span>
@@ -92,11 +93,12 @@
 			<p id="turncount"></p>
 			<p id="turn"></p>
         	<script>timer()</script>
-		</div>
-		<div class="buttons">
- 			<button id="fullscreen" onclick="openfullscreen()" class="buttons">Fullscreen</button>
- 			<button id="forfeit" onclick="forfeit()" class="buttons">Forfeit</button>
- 			<button id="home" onclick="to_home()" class="buttons">Home</button>
+			</div>
+			<div class="buttons">
+ 				<button id="fullscreen" onclick="openfullscreen()" class="buttons">Fullscreen</button>
+ 				<button id="forfeit" onclick="forfeit()" class="buttons">Forfeit</button>
+ 				<button id="home" onclick="to_home()" class="buttons">Home</button>
+			</div>
 		</div>
 	</body>
 	<script src="javascripts/game.js"></script>
